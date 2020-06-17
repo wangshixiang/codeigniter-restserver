@@ -35,7 +35,10 @@ class RestController extends \CI_Controller
     /**
      * Defines https status
      */
-    protected $http_status = [];
+    protected $http_status = [
+        'UNAUTHORIZED'=>401,
+        'METHOD_NOT_ALLOWED'=>404,
+    ];
 
     /**
      * List of allowed HTTP methods.
